@@ -30,6 +30,9 @@ export interface ITrack {
 } //* This interface will be merged with the previous one (ITrack) and will have all the fields from both interfaces. Just for example of interface merging feature.
 //! Using this exasmple with types won't work - will be an error of duplicate type names.
 
+export type TStatus = "idle" | "loading" | "failed" | "success";
+//* Example of union type for status.
+
 //==============================
 
 //? type TBase = {

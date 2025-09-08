@@ -1,5 +1,5 @@
-type Id = string;
-type ImageUrl = string;
+export type TId = string;
+export type TImageUrl = string;
 
 //? type Duration = number;
 //? type isPublished = boolean;
@@ -7,15 +7,15 @@ type ImageUrl = string;
 //? type Album = undefined | string;
 //* Samples of typization using "type"
 
-interface IBase {
-    id: Id;
+export interface IBase {
+    id: TId;
     createdAt: string;
     updatedAt: string;
 } //* Some base interface for common fields
 
 export interface IArtist extends IBase {
     name: string;
-    imageUrl: ImageUrl;
+    imageUrl: TImageUrl;
     isVerified: boolean;
 } //* Interface for artist entity (all the fields from IBase and "name", "imageUrl", "isVerified")
 

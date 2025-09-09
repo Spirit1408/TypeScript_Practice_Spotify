@@ -23,6 +23,7 @@ export interface ITrack {
     artist: IArtist;
     title: string;
     isPublished: boolean;
+    audioUrl: string;
 } //* Interface for track entity.
 
 export interface ITrack {

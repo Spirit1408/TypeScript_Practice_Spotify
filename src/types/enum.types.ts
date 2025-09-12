@@ -1,0 +1,1 @@
+//* enum - type of data, which can be used as a defined value

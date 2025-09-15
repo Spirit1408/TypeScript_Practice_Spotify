@@ -65,5 +65,3 @@ export class SpotifyPlayer {
 //* Class for playing audio (using Howler.js library). contains two private properties: audio (Howl object or null) and state (IPlayerState object). In constructor setting initial state of the player. Contains some methods: play (to play a track), seek (to seek to a specific time in the track), private method loadTrack (to load a track, using in play() method), pause (to pause the track), volumeUp (to increase the volume), volumeDown (to decrease the volume) and stop (to stop the playing track).
 
 //? Note that play(), seek(), pause() and volume() - are the methods of the Howl object. And if audio variable is not null, means that audio is loaded and has a Howl type - methods play() and seek() will be available to use.
-
-//TODO 

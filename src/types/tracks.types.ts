@@ -1,9 +1,9 @@
 import type { ITrack } from "./music.types";
 
-const recentlyPlayed: ITrack[] = [];
+export const recentlyPlayed: ITrack[] = [];
 //* Array to store recently played tracks
 
-const topTracks: ReadonlyArray<ITrack> = [];
+export const topTracks: ReadonlyArray<ITrack> = [];
 //* Array to store user's top tracks. Using "ReadonlyArray" utility type to prevent modification of the array.
 
 //? const [user, setUser] = useState(string); - example of tuple. Tuple - array with fixed number of elements where each element can have different type.
@@ -11,7 +11,7 @@ const topTracks: ReadonlyArray<ITrack> = [];
 type TAudioVizualizerBar = [frequency: number, amplitude: number];
 //* Tuple type representing a single bar in an audio visualizer with frequency and amplitude.
 
-const bars: TAudioVizualizerBar[] = [
+export const bars: TAudioVizualizerBar[] = [
     [60, 0.8],
     [120, 0.6],
     [240, 0.9],
@@ -21,7 +21,7 @@ const bars: TAudioVizualizerBar[] = [
 type TTimeFormat = [minutes: string, seconds: string];
 //* Tuple type representing time in minutes and seconds.
 
-const timeFormat: TTimeFormat = ["00", "00"];
+export const timeFormat: TTimeFormat = ["00", "00"];
 
 function formatDuration(duration: number): TTimeFormat {
     const minutes = Math.floor(duration / 60)
